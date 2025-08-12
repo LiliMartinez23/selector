@@ -1,0 +1,161 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    font-size: 13px;
+}
+
+li {
+    font-size: 12px;
+}
+
+label {
+    cursor: pointer;
+}
+
+/* Radios & Boxes */
+.selector {
+    background-color: #e1e1e1;
+
+    height: 300px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Radios */
+.radios {
+    width: fit-content;
+    height: auto;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.radio {
+    display: flex;
+    flex-direction: row;
+}
+.radio-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #e1e1e1;
+    background-color: #fff;
+    padding: 0.5rem;
+    width: 30px;
+    height: 30px;
+}
+.radio-btn  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #e1e1e1;
+    background-color: #fff;
+    padding: 0.5rem;
+    width: 155px;
+    height: 30px;
+    cursor: pointer;
+}
+.radio-btn i {
+    padding: 0 10px 0 10px;
+}
+.radio-btn:hover {
+    color: #fff;
+    background-color: #007bff;
+}
+#radio1,
+#radio2,
+#radio3,
+#radio4 {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Boxes */
+.boxes {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box[hidden] {
+    display: none;
+}
+.box {
+    opacity: 0;
+    transform: translateY( 16px );
+
+    margin: 0;
+    padding: 1rem;
+    color: #fff;
+    background-color: #00000025;
+}
+#box1 {
+    background-image: url( 'img/workshop-unsplash.jpg' );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#box2 {
+    background-image: url( 'img/tech-nights-unsplash.jpg' );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#box3 {
+    background-image: url( 'img/volunteer-unsplash.jpg' );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#box4 {
+    background-image: url( 'img/hackathon-unsplash.jpg' );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Slide-Up Animation */
+.slide-up {
+    animation: slideUp 280ms ease-out both;
+}
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY( 16px );
+    }
+    to {
+        opacity: 1;
+        transform: translateY( 0 );
+    }
+}
+@media ( prefers-reduced-motion: reduce ) {
+    .slide-up {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Active radio & box */
+.active-radio .radio-icon,
+.active-radio .radio-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.active {
+    background-color: #007bff;
+    color: #fff;
+}

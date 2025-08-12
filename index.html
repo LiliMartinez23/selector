@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h1>BOXES</h1><br>
+
+    <div class="selector">
+        <div class="radios">
+            <div class="radio">
+                <div class="radio-icon">
+                    <i class="fa-solid fa-hammer"></i>
+                </div>
+                <div class="radio-btn">
+                    <input type="radio" name="group1" id="radio1" class="radio1" checked>
+                    <label for="radio1">Workshops</label>
+                </div>
+            </div>
+
+            <div class="radio">
+                <div class="radio-icon">
+                    <i class="fa-solid fa-computer"></i>
+                </div>
+                <div class="radio-btn">
+                    <input type="radio" name="group1" id="radio2" class="radio2">
+                    <label for="radio2">Tech Nights</label>
+                </div>
+            </div>
+
+            <div class="radio">
+                <div class="radio-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="radio-btn">
+                    <input type="radio" name="group1" id="radio3" class="radio3">
+                    <label for="radio3">Volunteer</label>
+                </div>
+            </div>
+
+            <div class="radio">
+                <div class="radio-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="radio-btn">
+                    <input type="radio" name="group1" id="radio4" class="radio4">
+                    <label for="radio4">Hackathons</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="boxes">
+            <div id="box1" class="box">
+                <i class="fa-solid fa-hammer"></i>
+                <h2>Workshops</h2>
+                <p>Hands-on learning sessions</p>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Machine Learning</li>
+                    <li>Cloud Computing</li>
+                </ul>
+            </div>
+
+            <div id="box2" class="box" hidden>
+                <i class="fa-solid fa-computer"></i>
+                <h2>Tech Nights</h2>
+                <p>Community-driven events.</p>
+                <ul>
+                    <li>Talks from members</li>
+                    <li>coding activities</li>
+                    <li>OS projects nights</li>
+                </ul>
+            </div>
+
+            <div id="box3" class="box" hidden>
+                <i class="fa-solid fa-heart"></i>
+                <h2>Volunteer</h2>
+                <p>Opportunities to give back</p>
+                <ul>
+                    <li>Mentorship Programs</li>
+                    <li>Youth Camps</li>
+                </ul>
+            </div>
+
+            <div id="box4" class="box" hidden>
+                <i class="fa-solid fa-code"></i>
+                <h2>Hackathons</h2>
+                <p>Intensive coding marathon</p>
+                <ul>
+                    <li>Team problem solving</li>
+                    <li>Networking</li>
+                    <li>Prizes & swag</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
